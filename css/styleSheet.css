@@ -56,6 +56,15 @@ body {
   background-color: #d2f8d2;
 }
 
+#plant_button {
+  font-size: 20px;
+  cursor: pointer;
+
+}
+#plant_button:hover{
+  background-color: #006400;
+}
+
 h1 {
   color: #006400;
   font-size: 250%;

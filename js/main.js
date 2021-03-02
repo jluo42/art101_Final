@@ -26,3 +26,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// open information browser when the button is clicked.
+function changeBrowser() {
+  window.open("https://www.gardeningknowhow.com/ornamental/cacti-succulents/burros-tail/burros-tail-care.htm", "_blank");
+}
