@@ -8,6 +8,7 @@
     <script src= "js/main.js" defer > </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
   </head>
   <body>
 
@@ -23,37 +24,61 @@
           <button onclick = "topFunction()" id = "topButton" title = "Goes to the Top"> Back to Top </button>
           <section class = "card">
             <div>
-              <h3> Burro's-Tail </h3> <br></br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h2> Burro's-Tails </h2> <br></br>
+              <p> Burro’s tail thrives indoors in a well-drained container where bright sunlight is on the plant.
+                It is recommended to slowly introduce the plant to full sun once purchased to allow it to acclimate first,
+                as light conditions vary from nursery to nursery, etc.  </p>
 
-                 <img src = "img/plant1_burrotail.jpg" alt = "" width = "700" height = "500" data-aos = "fade-up"><br></br>
-                 <button onclick = "changeBrowser()" id = "plant_button" data-aos = "fade-up"> More on Burro's-Tail </button> <br></br>
+                 <img id = "plant1" src = "img/burrotail.png" alt = "" width = "700" height = "500" data-aos = "fade-up"><br></br>
+
+                 <h3> Care & Maintence  </h3> <br></br>
+                 <p> To care for your plant, provide even moisture and fertilize with cactus food during the growing season.
+                   Divide the plant when it gets too large for a container and transplant it every couple of years to give it fresh new soil. </p> <br></br>
+
+                  <img id = "plant1" src = "img/burrotail_info.gif" alt = "" width = "700" height = "500" data-aos = "fade-up"><br></br>
+                 <button onclick = "changeImage()" id = "plant_button" data-aos = "fade-up"> More on Burro's-Tail </button>
             </div>
           </section>
           <br></br>
+
           <section class = "card">
             <div>
-              <h3> Jade Plant </h3> <br></br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h2> Jade Plants </h2> <br></br>
+              <p> It is recommended that Jade plants get full sun in order to grow properly. If they do not have full sun, they may become stunted and leggy.
+                Proper Temperature for Jade Plants Jade plant care instructions say that jade plants do best in day time temperatures of
+                65-75 F. (18-24 C.) during the day and 50-55 F. (10-13 C.) at night.</p>
 
-                 <img src = "img/plant2_jade.jpg" alt = "" width = "700" height = "500" data-aos = "fade-up"> <br></br>
-                 <button id = "plant_button" data-aos = "fade-up"> More on Burro's-Tail </button> <br></br>
+                 <img id = "plant2" src = "img/jade.png" alt = "" width = "700" height = "500" data-aos = "fade-up"> <br></br>
+
+                 <h3> Care & Maintence  </h3> <br></br>
+                 <p> Do not let a jade plant dry out completely. However, be sure to not water a jade plant too often, as this can cause root rot.
+                   If your jade plant is losing leaves or has leaf spots, this is most commonly caused by too little water.  </p> <br></br>
+
+                  <img id = "plant1" src = "img/jade_info.gif" alt = "" width = "700" height = "500" data-aos = "fade-up"><br></br>
+                 <button id = "plant_button" onclick = "changeImage()" data-aos = "fade-up" onclick = "changeImage()"> More on Jade </button> <br></br>
             </div>
           </section>
+
           <section class = "card">
             <div>
-              <h3> Plant 3 </h3> <br></br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h2> Oxalis Plants </h2> <br></br>
+              <p> It is recommended that Jade plants get full sun in order to grow properly. If they do not have full sun, they may become stunted and leggy.
+                Proper Temperature for Jade Plants Jade plant care instructions say that jade plants do best in day time temperatures of
+                65-75 F. (18-24 C.) during the day and 50-55 F. (10-13 C.) at night.</p>
 
+                 <img src = "img/oxalis.png" alt = "" width = "700" height = "500" data-aos = "fade-up"> <br></br>
+                 <button id = "plant_button" data-aos = "fade-up"> More on Oxalis </button> <br></br>
+            </div>
+          </section>
+
+          <section class = "card">
+            <div>
+              <h2> Ivy Plants </h2> <br></br>
+              <p> Devil’s ivy can thrive in both bright sunlight or dim lighting inside your home. The only lighting conditions it can’t tolerate are full, direct sun and complete darkness.
+                If exposed to bright, filtered light, your devil’s ivy will have more yellow variegation in its leaves.​ </p>
+
+                 <img src = "img/ivy.png" alt = "" width = "700" height = "500" data-aos = "fade-up"> <br></br>
+                 <button id = "plant_button" data-aos = "fade-up"> More on Ivy </button> <br></br>
             </div>
           </section>
 
