@@ -35,9 +35,12 @@ function changeBrowser() {
 var opacity = 0;
 var intervalID = 0;
 
-function changeImage() {
+function changeImage(idNum) {
   console.log("I am being clicked");
   intervalID = setInterval(hide, 20);
+  if (idNum == 2){
+    console.log("test");
+  }
 }
 
 function hide () {
