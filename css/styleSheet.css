@@ -96,6 +96,11 @@ h3 {
   color: #FFFF;
 }
 
+h3.care {
+  color: #000000;
+  font-weight: bold;
+}
+
 p {
   font-family: "Ubuntu";
   text-indent: 20px;
@@ -117,5 +122,5 @@ img {
 }
 
 background {
-  background-color:  #e3e3e3;
+  background-color: #e3e3e3;
 }
