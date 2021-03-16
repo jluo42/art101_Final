@@ -27,9 +27,20 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+var link1 = "https://www.gardeningknowhow.com/ornamental/cacti-succulents/burros-tail/burros-tail-care.htm";
+var link2 = "https://www.gardeningknowhow.com/houseplants/jade-plant/jade-plant-care.htm";
+var link3 = "https://www.gardeningknowhow.com/houseplants/shamrock/growing-shamrock-plants.htm";
+var link4 = "https://www.epicgardening.com/golden-pothos-devils-ivy/";
+var link5 = "https://www.apartmenttherapy.com/chinese-money-plants-are-rare-but-easy-to-grow-244300";
+var links = [link1, link2, link3, link4, link5];
 // open information browser when the button is clicked.
-function changeBrowser() {
-  window.open("https://www.gardeningknowhow.com/ornamental/cacti-succulents/burros-tail/burros-tail-care.htm", "_blank");
+function changeBrowser(idNumber) {
+  console.log(links);
+  for(var i = 0; i <= 4; i++) {
+    if(i == idNumber){
+      window.open(link1, "_blank");
+    }
+  }
 }
 
 var opacity = 0;
