@@ -65,7 +65,7 @@ function changeBrowser(idNumber) {
   console.log(links);
   for(var i = 0; i <= 4; i++) {
     if(i == idNumber){
-      window.open(link1, "_blank");
+      window.open(links[i], "_blank");
     }
   }
 }
