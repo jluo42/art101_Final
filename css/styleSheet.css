@@ -84,11 +84,11 @@ input[type = "submit"]{
   line-height: 1.5;
 }
 .main-header p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #000000;
   font-family: "Ubuntu";
-  line-height: 32px;
-  margin-bottom: 30px;
+  line-height: 35px;
+  margin-bottom: 10px;
 }
 
 .card {
