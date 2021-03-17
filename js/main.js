@@ -20,6 +20,7 @@ testButton.addEventListener('click', function(){
       var descValue = data['weather'][0]['description'];
       var humidityValue = data['main']['humidity'];
       var realTemp = ((tempValue - 273.15) * 9/5 + 32);
+      realTemp = Math.round(realTemp);
       console.log(realTemp);
 
       city.innerHTML = nameValue;
