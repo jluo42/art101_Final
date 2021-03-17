@@ -85,6 +85,10 @@ input[type = "submit"]{
 }
 .main-header p {
   font-size: 1.5rem;
+  color: #000000;
+  font-family: "Ubuntu";
+  line-height: 35px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -144,6 +148,8 @@ h3.care {
   color: #000000;
   font-weight: bold;
 }
+
+
 
 p.cityName {
   font-size: 30px;
