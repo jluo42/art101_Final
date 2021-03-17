@@ -11,6 +11,50 @@ body {
 
 
 }
+.input {
+  text-align: center;
+  margin: 100px, 0;
+}
+button.submit {
+  height: 50px;
+  width: 150px;
+  background: #e7e7e7;
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+input[type = "text"]{
+  height: 50px;
+  width: 600px;
+  background: #e7e7e7;
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 10px;
+}
+
+input[type = "submit"]{
+  height: 50px;
+  width: 150px;
+  background: #e7e7e7;
+  font-family: "Ubuntu";
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.display {
+  text-align: center;
+}
 
 .container {
   max-width: 1100px;
@@ -99,6 +143,37 @@ h3 {
 h3.care {
   color: #000000;
   font-weight: bold;
+}
+
+p.cityName {
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+
+p.desc {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+
+p.humidity {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+p.temp {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Ubuntu";
 }
 
 p {

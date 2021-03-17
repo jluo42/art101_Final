@@ -3,6 +3,33 @@ AOS.init({
   duration: 2000
 });
 
+var testButton = document.getElementById("plant_button");
+var inputValue = document.querySelector('.inputValue');
+var city = document.querySelector('.cityName');
+var desc = document.querySelector('.desc');
+var temp = document.querySelector('.temp');
+var humidity = document.querySelector('.humidity');
+
+testButton.addEventListener('click', function(){
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+ inputValue.value +'&appid=674717bee219fdfe992b505e98be329b')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      var nameValue = data['name'];
+      var tempValue = data['main']['temp'];
+      var descValue = data['weather'][0]['description'];
+      var humidityValue = data['main']['humidity'];
+      var realTemp = ((tempValue - 273.15) * 9/5 + 32);
+      console.log(realTemp);
+
+      city.innerHTML = nameValue;
+      temp.innerHTML = "The Temperature is: " + realTemp + " °F";
+      desc.innerHTML = descValue;
+      humidity.innerHTML = "Humidity is: " + humidityValue + "%";
+    })
+  .catch(err => alert("Wrong City Name"))
+})
+
 //get the button with id topbutton;
 topButton = document.getElementById("topButton");
 console.log(topButton);
@@ -42,9 +69,10 @@ function changeBrowser(idNumber) {
     }
   }
 }
-
 var opacity = 0;
 var intervalID = 0;
+
+
 
 function changeImage(idNum) {
   console.log("I am being clicked");
